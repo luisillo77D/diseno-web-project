@@ -1,0 +1,318 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container img{
+    width: 300px;
+    height: 300px;
+}
+
+button{
+    border: none; 
+    padding: 0;
+}
+
+button img{
+   display: block; 
+   width: 100%; 
+   height: auto;
+}
+
+.main-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 30px;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-titulo{
+    padding: 30px 30px;
+}
+
+.main-titulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.main-entradas-titulo{
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.main-entradas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+    margin-bottom: 70px;
+}
+
+.entradas {
+    background-color: #1f1e1e;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.entradas:hover{
+    background-color: #161616;
+}
+
+.entradas img {
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+.entradas-info {
+    margin-top: 20px; 
+}
+
+.entradas-info h3,
+.entradas-info h4 {
+    margin: 5px 0; 
+}
+
+
+
+
+
+
+.main-platosfuertes-titulo{
+    text-align: center;
+    padding: 50px 50px;
+
+}
+
+.main-platosfuertes-padding{
+    padding: 80px;
+}
+
+.main-platosfuertes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+    margin-bottom: 30px;
+}
+
+.platos-fuertes{
+    background-color: #1f1e1e;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.platos-fuertes:hover{
+    background-color: #161616;
+}
+
+.platos-fuertes img{
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.platos-fuertes-info{
+    margin-top: 20px; 
+}
+
+.platos-fuertes-info h3,
+.platos-fuertes-info h4 {
+    margin: 5px 0; 
+}
+
+
+
+
+
+
+.main-postres-titulo{
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.main-postres{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+    margin-bottom: 30px;
+}
+
+.postres{
+    background-color: #1f1e1e;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.postres:hover{
+    background-color: #161616;
+}
+
+.postres img{
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.postres-info{
+    margin-top: 20px; 
+}
+
+.postres-info h3,
+.postres-info h4 {
+    margin: 5px 0; 
+}
+
+
+
+
+
+.main-bebidas-titulo{
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.main-bebidas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+    margin-bottom: 30px;
+}
+
+.bebidas{
+    background-color: #1f1e1e;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.bebidas:hover{
+    background-color: #161616;
+}
+
+.bebidas img{
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.bebidas-info{
+    margin-top: 20px; 
+}
+
+.bebidas-info h3,
+.bebidas-info h4 {
+    margin: 5px 0; 
+}
+
+
+.ver-producto-btn {
+    background-color: #950101; 
+    font-family: 'Gotam SSM', sans-serif;
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    display: inline-block;
+    font-size: 14px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition-duration: 0.4s; 
+}
+
+.ver-producto-btn:hover {
+    background-color: #3D0000; 
+}
+
+.main-nav a{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+    font-size: 20px;
+}
+
+.nav-titulo h2{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.header-container{
+    background-color: black;
+}
+
+.main-container h3, h4{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.main-container{
+    background-color: #000000;
+    margin-bottom: 50px;
+}
+
+/*COLOR DE LOS TITULOS*/
+.main-entradas-titulo h1{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.main-platosfuertes-titulo h1{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.main-postres-titulo h1{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.main-bebidas-titulo h1{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.footer-container{
+    background-color: #000000;
+}
+
+
+.main-nav a{
+    border-bottom: 2px solid #950101;/*Colocar linea debajo de h4*/
+    padding-bottom: 8px;/*separacion entre tituli h4 y linea*/
+    display: inline-block;
+}
