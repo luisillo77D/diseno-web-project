@@ -39,12 +39,6 @@ button img{
     color: black;
 }
 
-
-
-
-
-
-
 .header-container{
     display: flex;
     flex-wrap: wrap;
@@ -365,6 +359,7 @@ button img{
     text-decoration: none;
     cursor: pointer;
 }
+
 
 .footer-content {
     display: flex;
