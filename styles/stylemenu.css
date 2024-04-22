@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+  }
+ body{
+     font-family: sans-serif;
+     margin: 0;
+     padding: 0;
+  background-color: rgb(0, 0, 0);
+ }
+ header{
+  
+    min-height: 70;
+    background-color: #000000;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    padding:10px;
+
+    } 
+    .nav-logo{
+       
+            display: flex ;
+            align-items: center;
+            height: 140px;
+            margin-right: 10px;
+         
+    }
+    a{
+        text-decoration: none;
+      color: #EDEDED;
+    }
+    .navegation-links {
+        display: flex;
+        font-size: 25px;
+    text-decoration: none;
+    color: black;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    
+
+    }
+    .navegation-links a {
+        font-weight: 600;
+        padding-right: 10px;
+         text-decoration: none;
+       color:rgb(255, 255, 255);
+       transition: all .3s ease;
+    }
+    .navegation-links :hover{
+        color: #3D0000;
+    }
+    .texto{
+        width: 100%;
+    color: #ededed;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem;
+    margin: 5rem;
+    gap: 2rem;
+    align-items: center;
+    background-color: #000000;
+    }
+    .oferta{
+        padding: 1rem 1rem;
+        background-color: #3D0000;
+        max-width: 97rem;
+        margin: auto;
+        border-radius: 3rem;
+        border: .1rem solid rgb(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgb(252, 1, 1);
+        flex: 1 1 30rem;
+        border-radius: 3.5rem;
+    
+    }
+    .oferta-sushi{
+   
+        display: flex;
+     
+        text-align: center;
+        
+        padding: 3em 14rem;
+        font-size: 3rem;
+        align-items: center;
+        flex-direction: row;
+    
+    }
+    
+    .oferta-comentario{
+        font-size: 30px;
+        text-decoration: none;
+        color: aliceblue;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .oferta-comentario h1 {
+        font-size: 60px;
+        padding: 26px;
+        color: #EDEDED;
+        display: block;
+        margin-bottom: 15px;
+     
+    }
+    .oferta-comentario h4  {
+        font-size: 30px;
+        text-decoration: none;
+        color: #EDEDED;
+        display: block;
+        margin-bottom: 15px;
+     
+    }
+  
+    .logo-oferta{
+      
+        height: 30rem;
+        justify-content: space-around;
+        align-content: flex-start;
+        padding: 0px 30px;
+        font-size: 6px;
+        border-radius: 11.8em;
+}
+
+
+.cuadro-comidas-populares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 70rem;
+    max-width: 90rem;
+    padding: 2rem;
+    margin: auto;
+    position: relative;
+    
+}
+.Caja-Comida{
+    display: flex;
+  
+    width: 18rem;
+    max-width: 45%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #111111;
+    margin-bottom: 1rem;
+ 
+    padding: 1px;
+}
+.cuadro-comida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #161616;
+    max-width: 1400px;
+    margin: 18px auto;
+    border-radius: 3rem;
+    flex-direction: column;
+}
+
+.cuadro-comida img{
+    display: flex; 
+  
+    object-fit: cover;
+    height: 15rem;
+    width: 16rem;
+    margin-top: -1rem;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  
+    border-radius: 3rem;
+}
+.cuadro-titulo{
+    display: flex;
+    font-size: 2em;
+    color: #EDEDED;
+}
+.cuadro-precio{
+    display: flex;
+    font-family: var;
+    max-height: 10em;
+    overflow: hidden;
+    color: #EDEDED;
+    font-size: 2em;
+}
+.cuadro-boton{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color:#950101;
+    border: none;
+    color: white;
+    font-style: italic;
+    padding: 0.50em 1em;
+    font-size: 2rem;
+    border-radius: 3rem;
+}
+
+.subtitulo-comida{
+    font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+   color: rgb(255, 255, 255);
+}
+.comprar-nosotros{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255 255 255);
+    padding: 5pc;
+}
+
+.heading{
+   
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem auto;
+        font-style: italic;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255 255 255);
+        padding: 1em;
+    
+}
+
+
+.opiniones .caja-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #111111;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 3rem;
+
+}
+.opiniones .caja-contenedor .caja{
+    background: #161616;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgb(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.1);
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    border-color:#9e9e9e;
+    border-width: 2px;
+    border-style: solid;
+}
+.opiniones .caja-contenedor .caja .fa-user {
+   position: absolute;
+   top: 1rem;
+   right: 2rem;
+   font-size: 4rem;
+   color: #3D0000;
+   
+}
+.opiniones .caja-contenedor .caja .user img{
+border-radius: 50%;
+object-fit: cover;
+height: 8rem;
+width: 8rem;
+margin-top: 2rem;
+}
+.opiniones .caja-contenedor .caja .user h3{
+    color:#EDEDED;
+    font-size: 2rem;
+
+}
+.opiniones .caja-contenedor .caja .user .star i{ 
+font-size: 1.5rem;
+padding: 1rem 0;
+
+}
+.opiniones .caja-contenedor .caja .comentarios{
+    color:#EDEDED;
+font-size: 1.5rem;
+padding: 1rem;
+}
+.contenedor{
+    display: flexbox;
+    color:white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+  
+}
+.contenedor-restaurante{
+    display: flex;
+    padding: 3rem;
+    background-color: #161616;
+    max-width: 1400px;
+    margin: 100px auto;
+    border-radius: 3rem;
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-restaurante{
+    padding: 0.5em 3em;
+    font-size: 0rem;
+    border-radius: 3rem;
+    object-fit: cover;
+    width: 48%;
+    margin-top: 2rem;
+    margin: 0rem;
+
+    }
+
+.contenedor-comprar{
+    display: flex;
+}
+   
+   
+.Container{
+       max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+     background-color: rgb(0, 0, 0);
+    padding: 80px;
+    display: flex;
+}
+
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+
+.footer-logo{
+    display: flex;
+    height: 80px;
+    padding: 0px 0px;
+}
+
+.footer-logo a{
+    color: white;
+}
+    
+.footer-links{
+    width: 25%;
+    padding: 0 20px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3FF;  
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5 ease;
+}
+
+.social-link a:hover {
+    background-color: #00c3FF;
+}
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.border-t {
+        border-top-width: 1px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: black;
+    background-color: #1f1f1f;
+    padding: 2rem;
+}
