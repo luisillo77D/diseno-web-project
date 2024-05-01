@@ -11,37 +11,78 @@ header {
   min-height: 70;
   background-color: #000000;
   justify-content: space-between;
-  margin: 0;
-  align-items: center;
-  padding: 10px;
+ 
 }
-.nav-logo {
+
+/*------- NUEVOS ELEMENTOS NAVBAR -----*/
+.main-nav{
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
-  height: 140px;
-  margin-right: 10px;
+  justify-content:flex-end;
 }
-a {
-  text-decoration: none;
-  color: rgb(92, 0, 0);
-}
-.navegation-links {
+
+.header-container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 20px;
+}
+
+.nav-titulo{
+  padding: 30px 30px;
+}
+
+.main-titulo{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.main-nav a{
   text-decoration: none;
-  color: black;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  align-items: flex-start;
+  color: #ccccccc8;
+  font-family: 'Gotam SSM', sans-serif;
+  font-size: 20px;
+  transition: 300ms ease-in-out;
 }
-.navegation-links a {
-  font-weight: 600;
-  padding-right: 10px;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+
+.nav-titulo h2{
+  color: #FFFFFF;
+  font-family: 'Gotam SSM', sans-serif;
+
 }
-.navegation-links :hover {
-  color: #660404;
+
+.header-container{
+  background-color: black;
 }
+
+.main-container h3, h4{
+  color: #FFFFFF;
+  font-family: 'Gotam SSM', sans-serif;
+}
+
+.main-container{
+  background-color: #000000;
+}
+
+.main-nav a:hover{
+  color: #ffffff;
+  scale: 1.2;
+  opacity: 1;
+  display: inline-block;
+}
+
+.img-logo{
+  width: 15%;
+}
+
+/*------- NUEVOS ELEMENTOS NAVBAR -----*/
+
 .texto {
   bottom: 0;
   width: 100%;
