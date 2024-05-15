@@ -1,5 +1,5 @@
 // Obtener elementos del DOM
-let listaProductos = document.querySelectorAll('.entradas, .platos-fuertes, .postres, .bebidas');
+let listaProductos = document.querySelectorAll('.item');
 let modal = document.getElementById('modal');
 let cerrarModal = document.getElementById('cerrarModal');
 let tituloProductoModal = document.getElementById('name-product')
@@ -10,8 +10,8 @@ let urlimagen = document.getElementById('img-modal');
 // Función para abrir el modal y mostrar los detalles del producto seleccionado
 function abrir(event) {
     // Obtener info de producto seleccionado
-    let tituloProducto = event.currentTarget.querySelector('h3').textContent;
-    let precioProduct = event.currentTarget.querySelector('h4').textContent;
+    let tituloProducto = event.currentTarget.querySelector('.titulo-item').textContent;
+    let precioProduct = event.currentTarget.querySelector('.precio-item').textContent;
     let imagenProducto = event.currentTarget.querySelector('img').src;
     
     // asignar la info al modal
