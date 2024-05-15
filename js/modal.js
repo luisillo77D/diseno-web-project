@@ -5,6 +5,7 @@ let cerrarModal = document.getElementById('cerrarModal');
 let tituloProductoModal = document.getElementById('name-product')
 let precioProductoModal = document.getElementById('price-product');
 let urlimagen = document.getElementById('img-modal');
+const btnAgregar = document.querySelectorAll('.boton-item');
 
 
 // Función para abrir el modal y mostrar los detalles del producto seleccionado
@@ -42,4 +43,14 @@ window.addEventListener('click', function (event) {
     if (event.target == modal) {
         cerrar();
     }
+});
+
+//agregamos la funcion cerrar al boton de agregar
+Array.from(btnAgregar).map(function(boton) {
+    boton.addEventListener('click',  ()=> {
+        //esperamos 1 segundo y cerramos el modal
+        setTimeout(cerrar, .5);
+        console.log('cerrar');
+    }
+    );
 });
