@@ -174,24 +174,22 @@ function ocultarCarrito(){
     }
 }
 //Actualizamos el total de Carrito
-function actualizarTotalCarrito(){
-    //seleccionamos el contenedor carrito
-    var carritoContenedor = document.getElementsByClassName('carrito')[0];
-    var carritoItems = carritoContenedor.getElementsByClassName('carrito-item');
+function actualizarTotalCarrito() {
+    var carritoItems = document.getElementsByClassName('carrito-item');
     var total = 0;
-    //recorremos cada elemento del carrito para actualizar el total
-    for(var i=0; i< carritoItems.length;i++){
+
+    for (var i = 0; i < carritoItems.length; i++) {
         var item = carritoItems[i];
-        var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
-        //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
-        var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
-        console.log(precio);
-        var cantidad = cantidadItem.value;
-        total = total + (precio * cantidad);
+        var precioElemento = item.querySelector('.carrito-item-precio');
+        var precio = parseFloat(precioElemento.innerText.replace(/[^\d.]/g, '')); // Eliminar símbolos no numéricos
+        var cantidadItem = item.querySelector('.carrito-item-cantidad');
+        var cantidad = parseInt(cantidadItem.value);
+
+        if (!isNaN(precio) && !isNaN(cantidad)) {
+            total += precio * cantidad;
+        }
     }
-    total = Math.round(total * 100)/100;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
-
+    var totalCarritoElemento = document.getElementById('total-carrito');
+    totalCarritoElemento.innerText = '$' + total.toLocaleString("es", { minimumFractionDigits: 2 }) + ",00";
 }
