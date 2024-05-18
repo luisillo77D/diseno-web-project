@@ -25,6 +25,10 @@ button img{
    height: auto;
 }
 
+body{
+    background-color: #000000;
+}
+
 .main-nav{
     display: flex;
     flex-wrap: wrap;
@@ -53,8 +57,6 @@ button img{
     text-align: center;
     margin-bottom: 50px;
 }
-
-
 
 .main-entradas-titulo{
     text-align: center;
@@ -95,12 +97,6 @@ button img{
 .entradas-info h4 {
     margin: 5px 0; 
 }
-
-
-
-
-
-
 
 
 .main-platosfuertes-titulo{
@@ -148,11 +144,6 @@ button img{
     margin: 5px 0; 
 }
 
-
-
-
-
-
 .main-postres-titulo{
     text-align: center;
     padding: 50px 50px;
@@ -192,10 +183,6 @@ button img{
 .postres-info h4 {
     margin: 5px 0; 
 }
-
-
-
-
 
 .main-bebidas-titulo{
     text-align: center;
@@ -312,11 +299,7 @@ button img{
 }
 
 
-.main-nav a{
-    border-bottom: 2px solid #950101;/*Colocar linea debajo de h4*/
-    padding-bottom: 8px;/*separacion entre tituli h4 y linea*/
-    display: inline-block;
-}
+
  /* estilos del modal*/
  .modal {
     display: none;
@@ -404,3 +387,72 @@ button img{
     background-color: #353535;
     padding: 2rem;
   }
+
+  /*------- NUEVOS ELEMENTOS NAVBAR -----*/
+.main-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content:flex-end;
+  }
+  
+  .header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 20px;
+  }
+  
+  .nav-titulo{
+    padding: 30px 30px;
+  }
+  
+  .main-titulo{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  
+  .main-nav a{
+    text-decoration: none;
+    color: #ccccccc8;
+    font-family: 'Gotam SSM', sans-serif;
+    font-size: 20px;
+    transition: 300ms ease-in-out;
+  }
+  
+  .nav-titulo h2{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+  
+  }
+  
+  .header-container{
+    background-color: black;
+  }
+  
+  .main-container h3, h4{
+    color: #FFFFFF;
+    font-family: 'Gotam SSM', sans-serif;
+  }
+  
+  .main-container{
+    background-color: #000000;
+  }
+  
+  .main-nav a:hover{
+    color: #ffffff;
+    scale: 1.2;
+    opacity: 1;
+    display: inline-block;
+  }
+  
+  .img-logo{
+    width: 15%;
+  }
+  
+  /*------- NUEVOS ELEMENTOS NAVBAR -----*/

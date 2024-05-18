@@ -43,7 +43,8 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por la compra");
+    alert("Gracias por la compra, podra encontrar su QR debajo del menu");
+    generarQR();
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
@@ -94,7 +95,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
 
     var itemCarritoContenido = `
         <div class="carrito-item">
-            <img src="${imagenSrc}" width="80px" alt="">
+            <img src="${imagenSrc}" class="img-item" width="80px" alt="">
             <div class="carrito-item-detalles">
                 <span class="carrito-item-titulo">${titulo}</span>
                 <div class="selector-cantidad">
@@ -180,16 +181,74 @@ function actualizarTotalCarrito() {
 
     for (var i = 0; i < carritoItems.length; i++) {
         var item = carritoItems[i];
-        var precioElemento = item.querySelector('.carrito-item-precio');
-        var precio = parseFloat(precioElemento.innerText.replace(/[^\d.]/g, '')); // Eliminar símbolos no numéricos
-        var cantidadItem = item.querySelector('.carrito-item-cantidad');
-        var cantidad = parseInt(cantidadItem.value);
+        var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
+        //quitamos el simobolo peso y el punto de milesimos.
+        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
+        var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
+        console.log(precio);
+        var cantidad = cantidadItem.value;
+        total = total + (precio * cantidad);
+    }
+    total = Math.round(total * 100)/100;
 
-        if (!isNaN(precio) && !isNaN(cantidad)) {
-            total += precio * cantidad;
-        }
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
+
+}
+
+// ------------------- CODIGO QR ---------------------
+
+function generarURL() {
+    var carritoItems = document.getElementsByClassName('carrito-item');
+    var items = [];
+    var total=0;
+
+    for (var i = 0; i < carritoItems.length; i++) {
+        var item = carritoItems[i];
+        var titulo = item.getElementsByClassName('carrito-item-titulo')[0].innerText;
+        var precio = item.getElementsByClassName('carrito-item-precio')[0].innerText;
+        var cantidad = item.getElementsByClassName('carrito-item-cantidad')[0].value;
+        var imagen = item.getElementsByClassName('img-item')[0].src; 
+
+        items.push({
+            titulo: titulo,
+            precio: precio,
+            cantidad: cantidad,
+            imagen: imagen 
+        });
+        
     }
 
-    var totalCarritoElemento = document.getElementById('total-carrito');
-    totalCarritoElemento.innerText = '$' + total.toLocaleString("es", { minimumFractionDigits: 2 }) + ",00";
+    var totalElement = document.getElementsByClassName('carrito-precio-total')[0].innerText;
+    var total = parseFloat(totalElement.replace('$', '').replace('.', '').replace(',', '.'));
+    console.log(total);
+
+    var encodedTotal = encodeURIComponent(total);
+    var encodedItems = encodeURIComponent(JSON.stringify(items));
+    //var url = "TicketQR.html?items=" + encodedItems;  // CAMBIAR DIRECCION
+    var url = "https://diseno-web-project.vercel.app/ticket.html?items=" + encodedItems + "&total=" + encodedTotal;
+    console.log(url);
+    return url;
+}
+
+
+function generarQR() {
+    var url = generarURL();
+    var contQR = document.getElementById('contenedorQR');
+    contQR.innerHTML = ''; // Limpiar QR anterior
+
+    // Crear instancia de QRCode
+    var qr = qrcode(0, 'H');
+    qr.addData(url);
+    qr.make();
+
+    // Insertar el código QR en el contenedor
+    var imgQR = document.createElement('img');
+    imgQR.src = qr.createDataURL(); // Obtener la URL del QR como una imagen
+
+    // Agregar el elemento de imagen al contenedor del QR
+    contQR.appendChild(imgQR);
+    // Agregar evento para abrir sin QR
+    contenedorQR.addEventListener('click', function() {
+        window.location.href = url;
+    });
 }
