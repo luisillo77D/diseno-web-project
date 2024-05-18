@@ -87,7 +87,6 @@
     margin: auto;
     display: flex;  
     justify-content: space-between;
-
 }
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
@@ -330,3 +329,29 @@
     text-decoration: none;
     color: rgb(92, 0, 0);
   }
+
+/*CONTENEDOR QR*/
+.contQRS{
+  max-width: 1200px;
+  color: #ffffff;
+  padding: 10px;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;  
+  justify-content: center;
+}
+
+.contenedorQR{
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+#contenedorQR img {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Cambiado '300ms ease-in-out' por '0.3s ease-in-out' */
+}
+
+#contenedorQR img:hover {
+  transform: scale(1.2); /* Corregido 'scale' */
+}
