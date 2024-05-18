@@ -225,7 +225,7 @@ function generarURL() {
     var encodedTotal = encodeURIComponent(total);
     var encodedItems = encodeURIComponent(JSON.stringify(items));
     //var url = "TicketQR.html?items=" + encodedItems;  // CAMBIAR DIRECCION
-    var url = "https://diseno-web-project.vercel.app/ticket.html?items=" + encodedItems + "&total=" + encodedTotal;
+    var url = "https://diseno-web-project.vercel.app/TicketQR.html?items=" + encodedItems + "&total=" + encodedTotal;
     console.log(url);
     return url;
 }
