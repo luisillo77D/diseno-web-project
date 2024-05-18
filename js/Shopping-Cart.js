@@ -175,13 +175,11 @@ function ocultarCarrito(){
     }
 }
 //Actualizamos el total de Carrito
-function actualizarTotalCarrito(){
-    //seleccionamos el contenedor carrito
-    var carritoContenedor = document.getElementsByClassName('carrito')[0];
-    var carritoItems = carritoContenedor.getElementsByClassName('carrito-item');
+function actualizarTotalCarrito() {
+    var carritoItems = document.getElementsByClassName('carrito-item');
     var total = 0;
-    //recorremos cada elemento del carrito para actualizar el total
-    for(var i=0; i< carritoItems.length;i++){
+
+    for (var i = 0; i < carritoItems.length; i++) {
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
         //quitamos el simobolo peso y el punto de milesimos.
