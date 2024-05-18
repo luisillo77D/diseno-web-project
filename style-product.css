@@ -410,7 +410,10 @@
   .dropdown-toggle {
     padding: 10px 20px; 
     text-decoration: none;
-    color: rgb(92, 0, 0);
+    color: #333;
+    font-weight: bold;
+    position: relative; 
+    display: inline-block;
   }
 
 /*CONTENEDOR QR*/
@@ -438,11 +441,6 @@
 #contenedorQR img:hover {
   transform: scale(1.2); /* Corregido 'scale' */
 }
-    color: #333;
-    font-weight: bold;
-    position: relative; 
-    display: inline-block;
-  }
   
   .dropdown-content {
     display: none;
