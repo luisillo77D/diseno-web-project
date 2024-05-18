@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(2, 2, 2);
+}
+header {
+  min-height: 70;
+  background-color: #000000;
+  justify-content: space-between;
+ 
+}
+
+/*------- NUEVOS ELEMENTOS NAVBAR -----*/
+.main-nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content:flex-end;
+}
+
+.header-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 20px;
+}
+
+.nav-titulo{
+  padding: 30px 30px;
+}
+
+.main-titulo{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.main-nav a{
+  text-decoration: none;
+  color: #ccccccc8;
+  font-family: 'Gotam SSM', sans-serif;
+  font-size: 20px;
+  transition: 300ms ease-in-out;
+}
+
+.nav-titulo h2{
+  color: #FFFFFF;
+  font-family: 'Gotam SSM', sans-serif;
+
+}
+
+.header-container{
+  background-color: black;
+}
+
+.main-container h3, h4{
+  color: #FFFFFF;
+  font-family: 'Gotam SSM', sans-serif;
+}
+
+.main-container{
+  background-color: #000000;
+}
+
+.main-nav a:hover{
+  color: #ffffff;
+  scale: 1.2;
+  opacity: 1;
+  display: inline-block;
+}
+
+.img-logo{
+  width: 15%;
+}
+
+/*------- NUEVOS ELEMENTOS NAVBAR -----*/
+
+.texto {
+  bottom: 0;
+  width: 100%;
+  color: #660404;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: #000000;
+}
+.oferta-contenido {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(102, 1, 1);
+  max-width: 80rem;
+  margin: auto;
+}
+.subtitulo {
+  font-size: 2rem;
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 2rem;
+  border-radius: 2.8em;
+}
+.boton-oferta {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  font-style: italic;
+  padding: 0.5em 1em;
+  font-size: 2rem;
+  border-radius: 0.7em;
+}
+.logo {
+  display: flex;
+  height: 500px;
+  padding: 100px;
+  justify-content: space-around;
+  align-content: flex-start;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border-radius: 1.8em;
+}
+
+.COMIDASMASPEDIDAS {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255 255 255);
+  padding: 1em;
+}
+.cuadro-comidas-populares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  height: 65rem;
+  max-width: 90rem;
+  padding: 2rem;
+  margin: auto;
+  position: relative;
+}
+.cuadro-comida {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  max-width: 45%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: rgb(54, 54, 54);
+  margin-bottom: 1rem;
+}
+.cuadro-titulo {
+  font-size: 2em;
+}
+.cuadro-precio {
+  font-family: var;
+  max-height: 10em;
+  overflow: hidden;
+}
+.cuadro-boton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: rgb(139, 3, 3);
+  border: none;
+  color: white;
+  font-style: italic;
+  padding: 0.5em 1em;
+  font-size: 2rem;
+}
+
+.subtitulo-comida {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.comprar-nosotros {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255 255 255);
+  padding: 5pc;
+}
+.REVIEW {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255 255 255);
+  padding: 1em;
+}
+.contenedor {
+  display: flexbox;
+  color: white;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+.logo-restaurante {
+  background-image: url("restautantefondo.jpg");
+
+  height: 658px;
+  padding: 100px;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border-radius: 4.7em;
+}
+
+.comentarios {
+  padding: 2em;
+  background-color: #353535;
+}
+.comentarios-personas {
+  font-size: 2rem;
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0em 1em;
+  font-size: 2rem;
+}
+/*
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  padding: 2rem;
+}
+.logo-persona {
+  display: flex;
+  height: 413px;
+  padding: 100px;
+  justify-content: space-around;
+  align-content: flex-start;
+  padding: 0.5em 0em;
+  font-size: 14rem;
+  border-radius: 0.8em;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  padding: 3rem;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: black;
+  background-color: #353535;
+  padding: 2rem;
+}*/
+
+
+/*FOOTER*/
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.footer-section {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100px; 
+}
+
+.link-column h4 {
+  color: #ffffff;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+.footer-content {
+  text-align: center; 
+}
+
+.footer-content p {
+  max-width: 400px;
+}
+
+.social-links a i {
+  font-size: 24px; 
+  color: #950101;
+  transition: color 0.3s; 
+}
+
+.social-links a i:hover {
+  color: rgb(233, 232, 232); 
+}
+
+.link-column h4 {
+  color: #ffffff; 
+  font-size: 1.2rem; 
+  margin-bottom: 1rem; 
+}
+
+.link-column ul li a {
+  color: #ffffff; 
+  font-size: 1rem;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+
+.link-column ul li a:hover {
+  color: #ff0000; 
+}
+
+.copyright {
+  background-color: #181818;
+  color: #ffffff; 
+  text-align: center; 
+  padding: 1rem 0; 
+}
+
