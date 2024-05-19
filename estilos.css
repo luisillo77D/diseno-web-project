@@ -35,7 +35,7 @@ html {
 }
 
 .input-contenedor {
-   position: relative;
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -43,7 +43,7 @@ html {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid white;
+    border: 1px solid #ccc;
     color: white;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(248, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
     box-sizing: border-box;
@@ -59,6 +59,11 @@ html {
     color: white;
 }
 
+.img {
+    width: 50%;
+    height: auto;
+}
+
 .button {
     width: 500px;
     padding: 10px;
@@ -70,6 +75,10 @@ html {
     background-color: rgb(79, 1, 1);
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(79, 1, 1);
 }
 
 p {
@@ -84,11 +93,6 @@ p {
     font-weight: bold;
 }
 
-.img {
-    width: 50%;
-    height: auto;
-}
- 
 @media screen and (max-width: 480px) {
     .formulario {
         width: 90%; 
