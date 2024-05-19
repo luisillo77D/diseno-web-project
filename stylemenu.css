@@ -11,78 +11,37 @@ header {
   min-height: 70;
   background-color: #000000;
   justify-content: space-between;
- 
-}
-
-/*------- NUEVOS ELEMENTOS NAVBAR -----*/
-.main-nav{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  margin: 0;
   align-items: center;
-  justify-content:flex-end;
+  padding: 10px;
 }
-
-.header-container{
+.nav-logo {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding: 20px;
+  height: 140px;
+  margin-right: 10px;
 }
-
-.nav-titulo{
-  padding: 30px 30px;
-}
-
-.main-titulo{
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-
-.main-nav a{
+a {
   text-decoration: none;
-  color: #ccccccc8;
-  font-family: 'Gotam SSM', sans-serif;
-  font-size: 20px;
-  transition: 300ms ease-in-out;
+  color: rgb(92, 0, 0);
 }
-
-.nav-titulo h2{
-  color: #FFFFFF;
-  font-family: 'Gotam SSM', sans-serif;
-
+.navegation-links {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
-
-.header-container{
-  background-color: black;
+.navegation-links a {
+  font-weight: 600;
+  padding-right: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-
-.main-container h3, h4{
-  color: #FFFFFF;
-  font-family: 'Gotam SSM', sans-serif;
+.navegation-links :hover {
+  color: #660404;
 }
-
-.main-container{
-  background-color: #000000;
-}
-
-.main-nav a:hover{
-  color: #ffffff;
-  scale: 1.2;
-  opacity: 1;
-  display: inline-block;
-}
-
-.img-logo{
-  width: 15%;
-}
-
-/*------- NUEVOS ELEMENTOS NAVBAR -----*/
-
 .texto {
   bottom: 0;
   width: 100%;
