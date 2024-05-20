@@ -3,82 +3,86 @@
     margin: 0;
     padding:0;
     font-family: 'Open Sans';
-    background-color: #000000;
 }
 
-/*------- NUEVOS ELEMENTOS NAVBAR -----*/
+
 .main-nav{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
     justify-content:flex-end;
-  }
-  
-  .header-container{
-    padding: 20px;
+    padding: 30px;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: rgb(253, 247, 247);
+}
+
+.header-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  
-  .nav-titulo{
+}
+
+.nav-titulo{
     padding: 30px 30px;
-  }
-  
-  .main-titulo{
+}
+
+.main-titulo{
     text-align: center;
     margin-bottom: 50px;
-  }
-  
-  
-  .main-nav a{
-    text-decoration: none;
-    color: #ccccccc8;
+}
+
+
+.main-nav a{
+    color: #FFFFFF;
     font-family: 'Gotam SSM', sans-serif;
     font-size: 20px;
-    transition: 300ms ease-in-out;
-  }
-  
-  .nav-titulo h2{
+}
+
+.nav-titulo h2{
     color: #FFFFFF;
     font-family: 'Gotam SSM', sans-serif;
-  
-  }
-  
-  .header-container{
+
+}
+
+.header-container{
     background-color: black;
-  }
-  
-  .main-container h3, h4{
+}
+
+.main-container h3, h4{
     color: #FFFFFF;
     font-family: 'Gotam SSM', sans-serif;
-  }
-  
-  .main-container{
+
+}
+
+.main-container{
     background-color: #000000;
-  }
-  
-  .main-nav a:hover{
-    color: #ffffff;
-    scale: 1.2;
-    opacity: 1;
+}
+
+.main-nav a:hover{
+    border-bottom: 3px solid #950101;/*Colocar linea debajo de h4*/
+    padding-bottom: 8px;/*separacion entre tituli h4 y linea*/
     display: inline-block;
-  }
-  
-  .img-logo{
-    width: 15%;
-  }
-  
-  /*------- NUEVOS ELEMENTOS NAVBAR -----*/
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .fon{
     background-color: #000000;
 }
+ 
 
 .contenedor{
     max-width: 1200px;
@@ -87,6 +91,7 @@
     margin: auto;
     display: flex;  
     justify-content: space-between;
+
 }
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
@@ -410,34 +415,6 @@
   .dropdown-toggle {
     padding: 10px 20px; 
     text-decoration: none;
-    color: rgb(92, 0, 0);
-  }
-
-/*CONTENEDOR QR*/
-.contQRS{
-  max-width: 1200px;
-  color: #ffffff;
-  padding: 10px;
-  margin: auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex;  
-  justify-content: center;
-}
-
-.contenedorQR{
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-
-#contenedorQR img {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out; /* Cambiado '300ms ease-in-out' por '0.3s ease-in-out' */
-}
-
-#contenedorQR img:hover {
-  transform: scale(1.2); /* Corregido 'scale' */
-}
     color: #333;
     font-weight: bold;
     position: relative; 
