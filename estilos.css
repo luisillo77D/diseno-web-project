@@ -1,0 +1,129 @@
+* {
+    font-family: system-ui, fantasy;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(105, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.formulario {
+    display: inline-block;
+    background: rgb(3, 3, 3);
+    background: linear-gradient(180deg, rgba(3, 3, 3, 1) 45%, rgba(218, 5, 5, 1) 91%);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.formulario h1 {
+    color: white;
+}
+
+.contenedor {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-contenedor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-contenedor input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(248, 1, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    box-sizing: border-box;
+    outline: none;
+    margin-left: 30px;
+}
+
+.input-contenedor .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+.button {
+    width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    background-color: rgb(79, 1, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(79, 1, 1);
+}
+
+p {
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .formulario {
+        width: 90%; 
+    }
+
+    .button {
+        width: 90%; 
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        width: 80%; 
+    }
+
+    .button {
+        width: 80%; 
+    }
+   
+}
+
+@media screen and (max-width: 1024px) {
+    .formulario {
+        width: 70%; 
+    }
+
+    .button {
+        width: 70%; 
+    }
+
+    
+
+}
