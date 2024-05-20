@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <title>Carrito</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style-product.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 </head>
 <body>
     <header class="header-container">
@@ -20,16 +18,16 @@
 
         <nav class="main-nav">
             <div class="nav-inicio">
-                <a href="#">Inicio</a>
+                <a href="#PaginaPrincipal.html">Inicio</a>
             </div>
             <div class="nav-productos">
-                <a href="#">Productos</a>
+                <a href="products.html">Productos</a>
             </div>
             <div class="nav-inicio" id="historial-nav">
                 <a href="historial.html">historial</a>
             </div>
             <div class="nav-contacto">
-                <a href="#">Contacto</a>
+                <a href="Contact.html">Contacto</a>
             </div>
             <div class="dropdown">
                 <a href="#" class="dropdown-toggle nav-link" id="currency-selector">Cambiar Moneda</a>
@@ -46,6 +44,8 @@
             </div>
         </nav>
 </header>
+
+
     <main class="fon">
         <section class="contenedor">
             <!-- Contenedor de elementos -->
@@ -147,7 +147,6 @@
                     <button class="boton-item">Agregar al Carrito</button>
                 </div>
             </div>
-            
             <!-- Carrito de Compras -->
             <div class="carrito" id="carrito">
                 <div class="header-carrito">
@@ -170,17 +169,18 @@
                 </div>
             </div>
         </section>
-        <section class="contQRS">
-          <div id="contenedorQR"></div>                
-        </section>
     </main>
+    
+
+
+
     <footer>
         <div class="footer-links">
           <!-- Sección izquierda: Restaurante Sabor Auténtico -->
           <div class="footer-section">
             <div class="footer-content">
               <div class="footer-logo">
-                <a href="PaginaPrincipal.html">
+                <a href="/pages/menu.html">
                   <img src="img/logo Izq.png" alt="" width="300" height="100">
                 </a>
               </div>
@@ -194,8 +194,8 @@
               <div class="social-links">
                 <a href="https://www.facebook.com/profile.php?id=61559439190837" aria-label="Facebook" target="_blank"><i class="bi bi-facebook" aria-hidden="true"></i></a>
                 <a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=+526621918819" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
-            </div>
+                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
           <!-- Sección derecha: Servicios -->
@@ -203,9 +203,9 @@
             <div class="link-column">
               <h4>Nuestro Restaurant</h4>
               <ul>
-                <li><a href="product.html">Menú</a></li>
+                <li><a href="#">Menú</a></li>
                 <li><a href="#">Eventos Especiales</a></li>
-                <li><a href="reservations.html">Reservaciones</a></li>
+                <li><a href="#">Reservaciones</a></li>
                 <li><a href="#">Bolsa de Trabajo</a></li>
               </ul>
             </div>
@@ -226,10 +226,10 @@
             <div class="link-column">
               <h4>Contactos</h4>
               <ul>
-                <li><a href="Contact.html">Contacta con Nosotros</a></li>
-                <li><a href="PrivacyPolicy.html">Politicas de Privacidad</a></li>
-                <li><a href="TermsConditions.html">Terminos y Condiciones</a></li>
-                <li><a href="calculator.html">Calculadora de Calorias</a></li>
+                <li><a href="#">Contacta con Nosotros</a></li>
+                <li><a href="#">Politicas de Privacidad</a></li>
+                <li><a href="#">Terminos y Condiciones</a></li>
+                <li><a href="#">Calculadora de Calorias</a></li>
               </ul>
             </div>
           </div>
@@ -252,9 +252,8 @@
     </div>
 
     <script src="js/historial.js"></script>
-    <script src="/js/navigation.js"></script>
     <script src="js/Shopping-Cart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+
     <script src="js/modal.js"></script>
 
     <script src="js/cambioMoneda.js"></script>
