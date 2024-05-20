@@ -251,4 +251,5 @@ function generarQR() {
     contenedorQR.addEventListener('click', function() {
         window.location.href = url;
     });
+    //xd
 }
