@@ -13,7 +13,7 @@ function abrir(event) {
     // Obtener info de producto seleccionado
     let tituloProducto = event.currentTarget.querySelector('.titulo-item').textContent;
     let precioProduct = event.currentTarget.querySelector('.precio-item').textContent;
-    let imagenProducto = event.currentTarget.querySelector('img').src;
+    let imagenProducto = event.currentTarget.querySelector('.img-item').src;
     
     // asignar la info al modal
     tituloProductoModal.textContent = tituloProducto;
