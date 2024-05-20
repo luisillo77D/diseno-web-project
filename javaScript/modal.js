@@ -14,7 +14,7 @@ function abrir(event) {
     let tituloProducto = event.currentTarget.querySelector('.titulo-item').textContent;
     let precioProduct = event.currentTarget.querySelector('.precio-item').textContent;
     let imagenProducto = event.currentTarget.querySelector('.img-item').src;
-    
+    console.log(imagenProducto);
     // asignar la info al modal
     tituloProductoModal.textContent = tituloProducto;
     precioProductoModal.textContent = precioProduct;
