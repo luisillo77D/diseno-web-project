@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title></title> 
-	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="estilos.css">
-	
 
-</head>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+
 <body>
- <form class="formulario">
-    
-    <h1>Registrate</h1>
-    <img src="img/logo1.png" class="img" alt="">
-     <div class="contenedor">
-     
-     <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" id="name" placeholder="Nombre Completo">
-         
-         </div>
-         
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" id= "mail" placeholder="Correo Electronico">
-         
-         </div>
-         
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" id="password" placeholder="Contraseña">
-         
-         </div>
-         <input type="submit" value="Registrate" class="button">
-         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿Ya tienes una cuenta?<a class="link" href="Login.html">Iniciar Sesion</a></p>
-     </div>
-    </form>
+    <header style="display: none;">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="img/logo Izq.png" alt="logo de la imagen" class="nav-logo" />
+            </div>
+            <nav class="navegation-links">
+                <a href="/pages/menu.html">Inicio</a>
+                <a href="/pages/about.html">Sobre Nosotros</a>
+                <a href="/pages/contact.html">Contacto</a>
+                <a href="#" id="cart-icon"><i class="bi bi-cart-fill" aria-hidden="true"></i></a>
+                <a href="Login.html" id="nav-signin">Sign In</a>
+                <a href="PaginaPrincipal.html" id="nav-logout" style="display: none;">Log Out</a>
+                <a href="/index.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i></a>
+            </nav>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" onclick="window.location.href='PaginaPrincipal.html'" class="btn btn-outline-danger" id=boton>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z">
+                                </path>
+                                <path fill-rule="evenodd"
+                                    d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z">
+                                </path>
+                            </svg>
+                        </button>
+                        <h2 class="text-center mb-4">Registro</h2>
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="register-email">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="register-email"
+                                    placeholder="Ingresa tu correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">Contraseña</label>
+                                <input type="password" class="form-control" id="register-password"
+                                    placeholder="Ingresa tu contraseña" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-confirm-password">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" id="register-confirm-password"
+                                    placeholder="Confirma tu contraseña" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Registrarse</button>
+                            <p class="text-center mt-3">¿Ya tienes una cuenta? </p>
+                            <p class="text-center mt-3"><a class="link" href="Login.html">Inicia Sesion</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="js/registroLogin.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </html>
