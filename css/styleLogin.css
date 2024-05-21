@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to right, #882020, #f8690a, #882020); /* Gradiente de rojo a negro */
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+body::before, body::after {
+    content: "";
+    background: url('../img/logo1.png') no-repeat center center;
+    background-size: 300px auto; /* Ajusta el tamaño de la imagen a 400px de ancho */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centra la imagen verticalmente */
+    width: 400px; /* Ajusta el ancho del área de la imagen */
+    height: 100%;
+    z-index: -1;
+}
+
+body::before {
+    left: 0; /* Imagen en el lado izquierdo */
+}
+
+body::after {
+    right: 0; /* Imagen en el lado derecho */
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #ff0000; /* Color rojo para el título */
+}
+
+.container {
+    width: 1200px;
+}
+
+.btn-danger {
+    background-color: #ff0000; /* Botón de registro rojo */
+    border-color: #ff0000;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000; /* Color más oscuro en hover */
+    border-color: #cc0000;
+}
+
+header {
+    min-height: 70;
+    background-color: #000000;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(92, 0, 0);
+  }
+  .navegation-links {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .navegation-links a {
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .navegation-links :hover {
+    color: #660404;
+  }
+  
